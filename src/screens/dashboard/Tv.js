@@ -14,7 +14,7 @@ const Tv = ({ navigation }) => {
     const TvItem = ({ item }) => (
         <TouchableOpacity
             style={styles.tvItem}
-            onPress={() => navigation.navigate('DetailsScreen', { details: item })}
+            onPress={() => navigation.navigate('DetailsScreen', { details: item, title:'TV Shows' })}
         >
             <ImageBackground
                 source={{ uri: 'https://image.tmdb.org/t/p/w500' + item.poster_path }}

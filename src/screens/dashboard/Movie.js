@@ -14,7 +14,7 @@ const Movie = ({ navigation }) => {
     const MovieItem = ({ item }) => (
         <TouchableOpacity 
             style={styles.movieItem} 
-            onPress={() => navigation.navigate('DetailsScreen', { details: item })}
+            onPress={() => navigation.navigate('DetailsScreen', { details: item, title: 'Movie' })}
         >
             <ImageBackground 
                 source={{ uri: 'https://image.tmdb.org/t/p/w500' + item.poster_path }} 
